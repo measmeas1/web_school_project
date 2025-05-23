@@ -1,0 +1,635 @@
+/* 带按钮的模态框 */
+.layuiNotitle {
+  width: 564px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-radius: 12px !important;
+  background: #fff;
+}
+
+.layuiNotitle .layui-layer-content {
+  padding: 60px 70px 24px 70px !important;
+  position: relative;
+}
+
+.layuiNotitle .layui-layer-title {
+  /*display: none !important;*/
+  border: none;
+  font-size: 20px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  color: #202A4D;
+  padding: 60px 70px 0;
+}
+
+.layuiNotitleInput {
+  width: calc(100% - 140px);
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px -8px rgba(37, 202, 156, 0.1);
+  border-radius: 4px;
+  border: 1px solid #25CA9C;
+  outline: none;
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  z-index: 10;
+}
+
+.layuiNotitle .layui-layer-btn {
+  padding: 0 70px 50px 70px !important;
+}
+
+.layuiNotitle .layui-layer-btn-c {
+
+  width: calc(100% - 140px);
+  box-sizing: border-box;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.layuiNotitle .layui-layer-btn a {
+  display: inline-block;
+  width: 204px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.layuiNotitle .layui-layer-btn a.layui-layer-btn0 {
+  background: #25ca9c;
+  box-shadow: 0px 6px 32px -6px rgba(37, 202, 156, 0.5);
+  color: #fff;
+  font-size: 18px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  left: 0;
+}
+
+.layuiNotitle .layui-layer-btn a.layui-layer-btn1 {
+  right: 0;
+}
+
+.layuiNotitle .layui-layer-content {
+  text-align: center !important;
+  font-size: 20px!important;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  color: #202A4D;
+  line-height: 26px!important;
+}
+
+/* 信息提示框 */
+.layuiNotice {
+  border-radius: 12px !important;
+  overflow: hidden;
+  /* background: #fff; */
+}
+
+.layuiNotice .layui-layer-content {
+  background: #202a4d;
+  box-shadow: 0px 6px 32px -6px rgba(32, 42, 77, 0.5);
+  color: #fff;
+}
+
+.layuiNotice .layui-layer-title {
+  display: none !important;
+}
+
+.layuiNotice .layuiNoticeConent .top {
+  font-size: 20px;
+  font-family: Avenir-Medium, Avenir;
+  font-weight: 500;
+  color: #e8e9ed;
+}
+
+.layuiNotice .layuiNoticeConent .bottom {
+  font-size: 14px;
+  font-family: Avenir-Medium, Avenir;
+  font-weight: 500;
+  color: #757c94;
+}
+
+.layuiNotice .layui-layer-btn {
+  display: none;
+}
+
+.layuiNoticeGlobal {
+  /*overflow: hidden;*/
+  position: relative !important;
+  /*height: 30px;*/
+  line-height: 30px;
+}
+.closeBtn{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.layuiNoticeType {
+  width: 32px;
+  height: 32px;
+  /* float: left; */
+  position: absolute;
+  left: 0;
+  top: -2px;
+  /* margin-right: 20px; */
+}
+
+.layuiNoticeClose {
+  width: 24px;
+  height: 24px;
+  /* float:right; */
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.layuiNoticeClose:hover {
+  cursor: pointer;
+}
+
+.layuiNoticeConent {
+  width: calc(100% - 32px - 24px - 20px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.layuiError .top {
+  color: #FB5963 !important;
+}
+
+.layui-layer-btn-c a:nth-child(2) {
+  background: #F4F6F7;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Avenir-Medium, Avenir;
+  font-weight: 500;
+  color: #202A4D;
+  margin: 0;
+}
+
+.layui-layer-btn-c a:nth-child(1) {
+  font-size: 18px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-weight: normal !important;
+  margin: 0;
+}
+
+.shareBtnModal:hover{cursor: pointer}
+
+.layui-layer-dialog,.layui-layer-page{
+  width: 564px!important;
+}
+
+select{
+  -webkit-appearance: none!important
+}
+.infoMain .middle .middle-down .input input{
+background: #fff!important;
+}
+input{
+color: #757c94!important;
+font-weight: 500!important;
+font-family: Avenir-Medium, Avenir!important;
+}
+input::-webkit-input-placeholder {
+color: #757c94!important;
+font-weight: 500!important;
+font-family: Avenir-Medium, Avenir!important;
+}
+#J_release, #J_release_2{
+color: #fff!important;
+}
+.infoMain .left .left-main .list{
+margin-bottom: 2px!important;
+}
+.list-boss{
+justify-content: space-between!important;
+}
+.infoMain .right .r2 button{
+min-width: 62px!important;
+    width: auto!important;
+}
+
+option{
+  background: #fff!important;
+}
+/*select{*/
+/*    border-radius: 8px!important;*/
+/*    border: 1px solid #e8e9ed!important;*/
+/*}*/
+
+
+/*溢出省略号  单行*/
+.shengluehaoDanhang{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** 通用弹出框 **/
+.cambojobModal {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-radius: 12px !important;
+  background: #fff;
+}
+
+.cambojobModal.layui-layer-dialog .layui-layer-content,.cambojobModal.layui-layer-page .layui-layer-content {
+  /*padding: 24px 70px 24px 70px;*/
+  padding: 60px 70px 24px 70px;
+  position: relative;
+
+}
+.cambojobModal.layui-layer-dialog .layui-layer-content h3,.cambojobModal.layui-layer-page .layui-layer-content h3 {
+  font-size: 20px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  color: #202A4D;
+  line-height: 26px;
+}
+
+.cambojobModal.layui-layer-dialog .layui-layer-btn,.cambojobModal.layui-layer-page .layui-layer-btn {
+  margin: 0 70px 50px 70px !important;
+  padding: 0;
+}
+
+.cambojobModal .layui-layer-btn-l {
+  width: calc(100% - 140px);
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cambojobModal .layui-layer-btn a {
+  display: inline-block;
+  width: 204px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0 0 0 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+}
+.cambojobModal .layui-layer-btn a:nth-child(1) {
+  margin-left:0;
+}
+.cambojobModal .layui-layer-btn a.primary, .cambojobModal .layui-layer-btn .layui-layer-btn0 {
+  background: #25ca9c;
+  box-shadow: 0px 6px 32px -6px rgba(37, 202, 156, 0.5);
+  color: #FFF;
+}
+.cambojobModal .layui-layer-btn a.light, .cambojobModal .layui-layer-btn .layui-layer-btn1 {
+  background: #F4F6F7;
+  box-shadow: 0px 6px 32px -6px rgba(32 42 77, 0.3);
+  color: #202A4D;
+}
+.cambojobModal .layui-layer-btn a.secondary {
+  background: #202A4D;
+  box-shadow: 0px 6px 32px -6px rgba(32 42 77, 0.3);
+  color: #FFF;
+}
+.cambojobModal .layui-layer-setwin .layui-layer-close1, .cambojobModal .layui-layer-setwin .layui-layer-close2, .cambojobModal .layui-layer-setwin .layui-layer-close2:hover {
+  background-image: url(../img/popclose.png);
+  background-size: 100%;
+  background-position: 0 0;
+  width: 32px;
+  height:32px;
+}
+.cambojobModal .layui-layer-setwin .layui-layer-close2:hover {
+  opacity: .7;
+}
+.cambojobModal .layui-layer-setwin .layui-layer-close2 {
+  right: 0;
+  top: 0;
+}
+
+
+
+.base-form {
+  position: relative;
+  width: 100%;
+  padding-top: 24px;
+  margin-bottom: 14px;
+}
+.base-form .label {
+  width: 100%;
+  font-size: 16px;
+  font-family: Avenir-Heavy, Avenir;
+  font-weight: 800;
+  color: #202a4d;
+  line-height: 16px;
+  margin-bottom: 14px;
+}
+.base-form .input-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.base-form input {
+  /*width: 435px;*/
+  line-height: 1;
+  box-sizing: border-box;
+  padding: 0 18px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #757c94;
+  background: transparent;
+}
+.base-form input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #757c94;
+}
+.base-form label {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #e8e9ed;
+  overflow: hidden;
+}
+
+.base-form .phone select {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 17px;
+  line-height: 48px;
+  width: 65px;
+  height: 48px;
+  appearance: none;
+  background: #f4f6f7;
+  outline: none;
+  border-radius: 4px 0px 0px 4px;
+  border-right: 1px solid #e8e9ed;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202a4d;
+}
+.base-form .password {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 18px;
+}
+.base-form .phone input {
+  width: 335px;
+}
+.base-form .phone strong {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  box-sizing: border-box;
+  text-align: right;
+  height: 100%;
+  padding-right: 18px;
+  font-size: 16px;
+  font-family: Avenir-Medium, Avenir;
+  font-weight: 500;
+  color: #25ca9c;
+  line-height: 46px;
+  background: #fff;
+  cursor: pointer;
+}
+.base-form .select-label select {
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 18px;
+  background: url(../img/arrow-down@2x.png) no-repeat calc(100% - 18px) 50% #f4f6f7;
+  background-size: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-family: Avenir-Medium, Avenir;
+  font-weight: 500;
+  color: #757c94;
+}
+
+.cols,
+.columns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -.4rem;
+  margin-right: -.4rem;
+}
+
+.cols.col-gapless,
+.columns.col-gapless {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cols.col-gapless > .column,
+.columns.col-gapless > .column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cols.col-oneline,
+.columns.col-oneline {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+[class~="col-"],
+.column {
+  box-sizing: border-box;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 100%;
+  padding-left: .4rem;
+  padding-right: .4rem;
+}
+
+[class~="col-"].col-12,
+[class~="col-"].col-11,
+[class~="col-"].col-10,
+[class~="col-"].col-9,
+[class~="col-"].col-8,
+[class~="col-"].col-7,
+[class~="col-"].col-6,
+[class~="col-"].col-5,
+[class~="col-"].col-4,
+[class~="col-"].col-3,
+[class~="col-"].col-2,
+[class~="col-"].col-1,
+[class~="col-"].col-auto,
+.column.col-12,
+.column.col-11,
+.column.col-10,
+.column.col-9,
+.column.col-8,
+.column.col-7,
+.column.col-6,
+.column.col-5,
+.column.col-4,
+.column.col-3,
+.column.col-2,
+.column.col-1,
+.column.col-auto {
+  -ms-flex: none;
+  flex: none;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: none;
+  width: auto;
+}
+
+.col-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-ml-auto {
+  margin-left: auto;
+}
+
+.col-mr-auto {
+  margin-right: auto;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+
+.popover {
+  display: inline-block;
+  position: relative;
+}
+
+.popover .popover-container {
+  left: 50%;
+  opacity: 0;
+  padding: .4rem;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .2s;
+  width: 320px;
+  z-index: 300;
+}
+
+.popover *:focus + .popover-container,
+.popover:hover .popover-container {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -100%) scale(1);
+}
+
+.popover.popover-right .popover-container {
+  left: 100%;
+  top: 50%;
+}
+
+.popover.popover-right *:focus + .popover-container,
+.popover.popover-right:hover .popover-container {
+  transform: translate(0, -50%) scale(1);
+}
+
+.popover.popover-bottom .popover-container {
+  left: 50%;
+  top: 100%;
+}
+
+.popover.popover-bottom *:focus + .popover-container,
+.popover.popover-bottom:hover .popover-container {
+  transform: translate(-50%, 0) scale(1);
+}
+
+.popover.popover-left .popover-container {
+  left: 0;
+  top: 50%;
+}
+
+.popover.popover-left *:focus + .popover-container,
+.popover.popover-left:hover .popover-container {
+  transform: translate(-100%, -50%) scale(1);
+}
+
+.popover .card {
+  border: 0;
+  box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .3);
+}

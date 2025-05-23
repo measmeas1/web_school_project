@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Avenir-Medium, Avenir;
+}
+
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+html,
+body {
+	min-width: 1200px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+	display: block;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+	outline-width: 0;
+	vertical-align: top;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../font/Avenir.ttc');
+}
+
+body {
+	background-position: 50% 0;
+	background-size: 1440px;
+}
+
+a,
+input,
+button,
+label,
+select {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	outline: none;
+	text-decoration: none;
+}
+
+a {
+	display: block;
+	color: #191b26;
+}
+
+li {
+	list-style: none;
+}
+
+input[type='checkbox'] {
+	position: relative;
+	display: inline-block;
+	background: url(../img/choose_button@2x.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 15px;
+	height: 15px;
+	border: none;
+	appearance: none;
+	padding: 0;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+	background: url(../img/checked@2x.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.main-width {
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.no_data_default {
+	padding-top: 100px;
+	margin: 30px auto;
+	width: 244px;
+	text-align: center
+}
+
+.no_data_default div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #757c94;
+	font-weight: 500;
+	font-family: Avenir-Medium, Avenir;
+}
+.part .payType,
+.part .payType2{
+	margin-top: 24px;
+}
+input::-webkit-input-placeholder {
+	color: #757c94;
+	font-weight: 500;
+	font-family: Avenir-Medium, Avenir;
+}
+
+.word1 {
+	font-weight: 500;
+	font-size: 28px;
+}
+
+.pay-card {
+	background: #F4F6F7;
+	padding: 14px 14px 0;
+	box-sizing: border-box;
+	border-radius: 12px;
+}
+.pay-card label{
+	margin-bottom: 14px!important;
+}
