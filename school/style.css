@@ -136,6 +136,14 @@ body {
   margin: 8px 0;
 }
 
+a{
+  text-decoration: none;
+}
+
+a h2{
+  color: #1a1a1a;
+}
+
 .hot-news a {
     color: gray;
     text-decoration: none;

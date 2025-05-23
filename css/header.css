@@ -11,7 +11,7 @@
 .home-header .main-width {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .home-header .header-left {
   position: relative;
@@ -31,6 +31,7 @@
   font-family: Avenir-Heavy, Avenir;
   font-weight: 800;
   color: #202A4D;
+  text-decoration: none;
 }
 .home-header .header-left .curr {
   color: #25CA9C;
@@ -41,11 +42,11 @@
   align-items: center;
   justify-content: flex-end;
 }
-.home-header .header-right img {
+/* .home-header .header-right img {
   width: 18px;
   margin-right: 6px;
-}
-.home-header .header-right .tab {
+} */
+/* .home-header .header-right .tab {
   position: relative;
   height: 36px;
   line-height: 36px;
@@ -54,14 +55,14 @@
   font-weight: 500;
   color: #202A4D;
   cursor: pointer;
-}
-.home-header .header-right .tab > span {
+} */
+/* .home-header .header-right .tab > span {
   display: flex;
   align-items: center;
   padding-left: 24px;
   background: url(../img/language_home@2x.png) no-repeat 0 50%;
   background-size: 18px;  
-}
+} */
 .home-header .header-right .tab .tab-card {
   position: absolute;
   left: 50%;
