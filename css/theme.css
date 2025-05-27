@@ -1,9 +1,0 @@
-.themeColor{
-  color: #25CA9C!important;
-}
-.themeColor a{
-  color: #000!important;
-}
-
-
-.noScroballBar::-webkit-scrollbar { width: 0; height: 0; color: transparent!important; }
