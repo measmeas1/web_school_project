@@ -14,16 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function toJobList() {
-  const searchInput = document.getElementById('fixed_search_input').value;
-  if (searchInput) {
-      window.location.href = `/Jobs/jobs_list/key/${encodeURIComponent(searchInput)}.htm`;
-  }
+const dropdowns = document.getElementsByClassName('dropdown');
+for (let i = 0; i < dropdowns.length; i++){
+  dropdowns[i].addEventListener("click", function(e){
+    const content = this.getElementsByClassName("dropdown-content")[0];
+    if(content.style.display === "block"){
+      content.style.display = "none";
+    }else{
+      for (let j = 0; j < dropdowns.length; j++){
+        dropdowns[j].getElementsByClassName("dropdown-content")[0].style.display = "none";
+      }
+      content.style.display = "block";
+    }
+    e.stopPropagation();
+  })
 }
-
-// function search() {
-//   const query = document.getElementById('search-input').value;
-//   if (query) {
-//       window.location.href = `/Jobs/jobs_list/key/${encodeURIComponent(query)}.htm`;
-//   }
-// }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Job</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Graphic Designer Section */
+        #design {
+            background: white;
+            padding: 40px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            max-width: 700px;
+            text-align: left;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        /* Image/Icon Section */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: auto;
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.2));
+        }
+
+        .image-container i {
+            font-size: 3em;
+            color: #0073e6;
+        }
+
+        /* Headings */
+        #design h2 {
+            color: #0073e6;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #design h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+
+        #design ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        #design li {
+            font-size: 1.2em;
+            padding: 8px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, button {
+            width: 90%;
+            max-width: 300px;
+            margin: 10px;
+            padding: 12px;
+            border-radius: 5px;
+            border: 2px solid #0073e6;
+            font-size: 1.1em;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        input:focus {
+            border-color: #005bb5;
+            box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+        }
+
+
+        button {
+            background: #0073e6;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #005bb5;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            #design {
+                padding: 30px;
+                max-width: 90%;
+            }
+
+            .image-container {
+                flex-direction: column;
+            }
+
+            input, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="design">
+        <h2>Graphic Designer Position</h2>
+
+        <div class="image-container">
+            <i class="fa-solid fa-palette fa-3x"></i>
+        </div>
+
+        <p>Join <strong>Creative Vision Studio</strong> as a Graphic Designer and craft stunning visuals for brands.</p>
+        
+        <h3>Requirements:</h3>
+        <ul>
+            <li>Proficiency in Adobe Photoshop, Illustrator, or Figma</li>
+            <li>Strong understanding of color theory and typography</li>
+            <li>Ability to create branding and marketing assets</li>
+            <li>Experience in UI/UX design is a plus</li>
+        </ul>
+
+        <h3>Responsibilities:</h3>
+        <ul>
+            <li>Design logos, banners, and promotional materials</li>
+            <li>Collaborate with teams to enhance brand identity</li>
+            <li>Ensure visual consistency across platforms</li>
+            <li>Stay updated with design trends and best practices</li>
+        </ul>
+
+        <h3>Apply Now:</h3>
+        <form id="applyForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="file" accept=".pdf,.docx" required>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("applyForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Fade-out effect before showing confirmation
+            this.style.opacity = "0";
+            setTimeout(() => {
+                alert("Your application has been submitted successfully!");
+                this.style.opacity = "1";
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>

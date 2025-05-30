@@ -27,7 +27,6 @@
   font-weight: 500;
   color: #757C94;
   line-height: 16px;
-  font-family: Avenir-Medium, Avenir;
 }
 .footer .footer-part2 .main-width p img {
   width: 20px;
@@ -56,7 +55,6 @@
   padding-bottom: 15px;
   font-size: 16px;
   font-weight: 500;
-  font-family: Avenir-Medium, Avenir;
   color: #757C94;
   line-height: 20px;
 }
@@ -73,7 +71,6 @@
   padding-bottom: 15px;
   font-size: 16px;
   font-weight: 500;
-  font-family: Avenir-Medium, Avenir;
   color: #757C94;
   line-height: 20px;
 }
@@ -85,11 +82,9 @@
   font-size: 20px;
   font-weight: 800;
   color: #202A4D;
-  font-family: Avenir-Heavy, Avenir;
   line-height: 20px;
   padding-bottom: 21px;
 }
-
 
 .sign-ad {
   width: 100%;
@@ -134,7 +129,6 @@
   margin-top: 45px;
 }
 .sign-ad .ad-container .middle .desc.en-us h4{
-  font-family: Avenir-BlackOblique, Avenir;
   font-weight: normal;
   color: #25CA9C;
   font-size: 22px;
@@ -149,7 +143,6 @@
 }
 .sign-ad .ad-container .middle .desc.en-us p {
   font-size: 14px;
-  font-family: Avenir-Heavy, Avenir;
   font-weight: 800;
   color: #25CA9C;
   line-height: 16px;
@@ -157,7 +150,6 @@
 }
 .sign-ad .ad-container .middle .desc.zh-cn h4{
   font-size: 22px;
-  font-family: Avenir-Black, Avenir;
   font-weight: 900;
   color: #25CA9C;
   line-height: 22px;

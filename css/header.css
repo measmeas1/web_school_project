@@ -1,5 +1,5 @@
 * {
-  max-width: 1280px;
+  max-width: 1368px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   box-sizing: border-box; /* Added for better responsiveness */
@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 6vh;
 }
 
 .header .header-left {
@@ -143,12 +144,7 @@
 
 .home-banner-small.en-us {
   background: url(../img/banner-sign-en-us@2x.jpg) no-repeat right;
-  background-size: 1260px 200px;
-}
-
-.main-width {
-  margin: 0 auto;
-  padding: 0 20px;
+  background-size: 1260px auto;
 }
 
 .search-container {
@@ -344,7 +340,7 @@
 
   .search-container {
     max-width: 50%;
-    margin: 30px 50px;
+    margin: 25px 50px;
   }
 
   .categories {
@@ -355,16 +351,17 @@
 /* Desktop */
 @media (min-width: 1281px) and (max-width: 1920px) {
   .home-banner-small.en-us {
-    background-size: 100% auto;
+    background-size: auto 192px;
     background-position: center;
   }
 
   .search-container {
-    margin: 40px 100px;
+    margin: 45px 16vh;
   }
 
   .categories {
-    margin-left: 11vh;
+    margin-left: 16vh;
   }
+  
 
 }
