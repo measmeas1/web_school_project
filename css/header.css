@@ -1,5 +1,5 @@
 * {
-  max-width: 1368px;
+  max-width: 1920px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   box-sizing: border-box; /* Added for better responsiveness */
@@ -143,6 +143,7 @@
 }
 
 .home-banner-small.en-us {
+  background: linear-gradient(180deg, #00c4b4, #fff);
   background: url(../img/banner-sign-en-us@2x.jpg) no-repeat right;
   background-size: 1260px auto;
 }
@@ -356,11 +357,11 @@
   }
 
   .search-container {
-    margin: 45px 16vh;
+    margin: 45px 30vh;
   }
 
   .categories {
-    margin-left: 16vh;
+    margin-left: 30vh;
   }
   
 

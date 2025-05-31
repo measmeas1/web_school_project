@@ -1,5 +1,5 @@
 .content .filters{
-  margin: 0px 16vh;
+  margin: 0px 29vh;
 }
 
 .content .dropdown{
@@ -35,7 +35,7 @@
 }
 
 .content .content-part {
-  width: 1140px;
+  width: 1400px;
   margin: 20px auto 0;
   padding-bottom: 30px;
 }
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 1140px;
+  width: 1300px;
   min-height: 192px;
   box-sizing: border-box;
   padding: 30px;

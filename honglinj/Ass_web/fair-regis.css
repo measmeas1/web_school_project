@@ -5,7 +5,7 @@ body{
 
 .fair-register{
   margin-top: 15vh;
-  margin-left: 16vw;
+  margin-left: 25vw;
 }
 
 .fair-register .fair-register-top > h1{
@@ -15,7 +15,7 @@ body{
 
 .fair-register .fair-register-top > hr{
   width: 950px;
-  margin-right: 200px;
+  margin-right: 450px;
   color: #ffffff;
 }
 
@@ -27,8 +27,8 @@ body{
 }
 
 .fair-register-intro .fair-register-left > img{
-  width: 25vw;
-  height: 25vh;
+  width: 20vw;
+  height: 20vh;
 }
 
 .fair-register-intro .fair-register-right > h4{
@@ -75,7 +75,7 @@ body{
   padding: 15px 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
-  width: 30vw;
+  width: 21.5vw;
   margin-right: 2vw;
 }
 .fair-register-card-header {

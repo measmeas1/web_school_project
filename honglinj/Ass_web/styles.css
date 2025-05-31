@@ -5,7 +5,7 @@ body{
 
 .fair-card{
     margin-top: 15vh;
-    margin-left: 24vh;
+    margin-left: 20vw;
     background-color: #ffffff;
     padding: 10px 26px;
     width: 29vw;
@@ -13,8 +13,8 @@ body{
 }
 
 .fair-card .fair-head-card > img{
-    width: 25vw;
-    height: 25vh;
+    width: 26vw;
+    height: 26vh;
 }
 
 .fair-section > a{
