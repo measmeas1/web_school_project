@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enterprise</title>
-  <link rel="stylesheet" href="enterprise.css">
-  <link rel="stylesheet" href="../../css/header.css">
-  <link rel="stylesheet" href="../../css/footer.css">
+  <title>Candidate Profile</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 600px;
+    }
+
+    .header {
+      position: relative;
+      background-image: url('../img/bj.png');
+      /* Replace with your background image URL */
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      /* Overlay for better text visibility */
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      z-index: 1;
+    }
+
+    .profile-info {
+      margin-left: 20px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .profile-info .status {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .profile-info .status .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #28a745;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .content {
+      display: flex;
+      padding: 20px;
+    }
+
+    .left-section {
+      flex: 2;
+    }
+
+    .right-section {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #666;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .section p span {
+      color: #333;
+    }
+
+    .right-section .action {
+      background-color: #f5f7fa;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      text-align: center;
+      color: #333;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .right-section .action.favorite {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-section .action.favorite .heart {
+      margin-left: 5px;
+      color: #ccc;
+    }
+  </style>
 </head>
+
 <body>
   <header class="header">
     <div class="max-header">
       <div class="header-left">
-        <a href="../../html/Home.html" title="CamboJob"><img src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
+        <a href="../html/Home.html" title="CamboJob"><img
+            src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
         <div>
-          <a class="ga" data-event="home_tab_home" href="../../html/Home.html">Home</a>
-          <a class="ga" data-event="home_tab_career_news" href="../../school/index.html">Career Advice</a>
-          <a href="../index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
-          <a href="../../panha/cambo/index.html">Headhunting</a>
+          <a class="ga" data-event="home_tab_home" href="../html/Home.html">Home</a>
+          <a class="ga" data-event="home_tab_career_news" href="../school/index.html">Career Advice</a>
+          <a href="../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
+          <a href="../panha/cambo/index.html">Headhunting</a>
         </div>
       </div>
       <div class="header-right">
@@ -36,96 +171,65 @@
             <img src="https://qiniu.cambojob.com/cmb_1739038675.png" class="user-profile">
             <span></span>
             <div class="userTopCARDheader user-card2">
-              <a href="../../profile/personal.html" data-event="profile_view" class="curr ga">Personal center</a>
-              <a href="../../profile/jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
+              <a href="personal.html" data-event="profile_view" class="curr ga">Personal center</a>
+              <a href="jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
                 management</a>
-              <a href="../../profile/account.html" class="ga" data-event="click_cv_account_management">Account
+              <a href="account.html" class="ga" data-event="click_cv_account_management">Account
                 management</a>
-              <a href="../../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
+              <a href="../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="fair-register-card-container">
-    <a class="fair-register-card">
-      <div class="fair-register-card-header">
-        <img src="https://qiniu.cambojob.com/2025-02-04-67a191d12ef4b.jpeg" alt="Canadia" class="fair-register-logo">
-        <div>
-          <strong>Song Saa Private Island</strong><br>
-          <span class="fair-register-tag">Annual Leave</span>
+  <div class="container">
+    <div class="header">
+      <img src="../img/cmb_1739038675.png" alt="Profile Picture" class="profile-pic">
+      <div class="profile-info">
+        <h2>Meas Mab</h2>
+        <div class="status">
+          <span class="dot"></span> Currently online
+        </div>
+        <p>Update: 34 minutes ago</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left-section">
+        <div class="section">
+          <h3>About Candidate</h3>
+          <p>male | 22</p>
+          <p>Reference: <span>+855 16998521</span></p>
+        </div>
+        <div class="section">
+          <h3>Expected job</h3>
+          <p>Expected job:</p>
+          <p>Job nature: <span>Full-time</span></p>
+          <p>Expected industry: <span>NO Limit</span></p>
+          <p>Expected location: <span>Array</span></p>
+          <p>I am a fresh graduate</p>
+        </div>
+        <div class="section">
+          <h3>Education</h3>
+          <p>2022 - 2026/9</p>
+          <p>Bachelor</p>
+          <p>Norton University</p>
+          <p>Software Development</p>
         </div>
       </div>
-      <ul>
-        <li>100-499 People · 1 Job opening</li>
-        <li>Song Saa Private Island is your best partner.</li>
-      </ul>
-    </a>
-
-    <a class="fair-register-card">
-      <div class="fair-register-card-header">
-        <img src="https://qiniu.cambojob.com/2023-01-16-63c533d2da874.png" alt="Compass" class="fair-register-logo">
-        <div>
-          <strong>VTECH Software Development</strong><br>
-          <span class="fair-register-tag">Good Attendance Award</span>
-          <span class="fair-register-tag">Annual Leave</span>
-          <span class="fair-register-tag">Year-end travel</span>
+      <div class="right-section">
+        <div class="action">Get Contact</div>
+        <div class="action">Online communication</div>
+        <div class="action">Interview invitation</div>
+        <div class="action">Operate</div>
+        <div class="action favorite">
+          Favorite resume <span class="heart">♡</span>
         </div>
+        <div class="action">Print resume</div>
+        <div class="action">Export word document</div>
       </div>
-      <ul>
-        <li>20-99 people · 2 Job opening</li>
-        <li>Easy team work with VTECH</li>
-      </ul>
-    </a>
-
-    <a class="fair-register-card">
-      <div class="fair-register-card-header">
-        <img src="https://qiniu.cambojob.com/2025-02-13-67ad67639a49f.png" alt="frogsell" class="fair-register-logo">
-        <div>
-          <strong>LibertyCarz</strong><br>
-          <span class="fair-register-tag">Annual Leave</span>
-          <span class="fair-register-tag">Free food</span>
-          <span class="fair-register-tag">Year-end travel</span>
-        </div>
-      </div>
-      <ul>
-        <li>20-99 people · 1 Job opening</li>
-        <li>Fun way of selling and buying.</li>
-      </ul>
-    </a>
-
-    <a class="fair-register-card">
-      <div class="fair-register-card-header">
-        <img src="https://qiniu.cambojob.com/2020-12-16-5fd9ac55df626.jpg" alt="CamboJob" class="fair-register-logo">
-        <div>
-          <strong>SOUTH EAST ASIA TELECOM (CAMBODIA) CO.,Ltd</strong><br>
-          <span class="fair-register-tag">Annual Leave</span>
-        </div>
-      </div>
-      <ul>
-        <li>100-499 people · 2 Job opening</li>
-        <li>Easy to get a job.</li>
-      </ul>
-    </a>
-
-    <a class="fair-register-card">
-      <div class="fair-register-card-header">
-        <img src="https://qiniu.cambojob.com/2022-04-10-62527b4891fb2.png" alt="Olympia" class="fair-register-logo">
-        <div>
-          <strong>富力集团柬埔寨公司</strong><br>
-          <span class="fair-register-tag">Annual Leave</span>
-          <span class="fair-register-tag">Food and accommodation</span>
-          <span class="fair-register-tag">Annual Bonus</span>
-        </div>
-      </div>
-      <ul>
-        <li>100-499 people · 1 Job opening</li>
-        <li>東南亞最大的写字楼房地平台品牌服务平台</li>
-      </ul>
-    </a>
+    </div>
   </div>
-
   <div class="footer">
     <div class="footer-part1">
       <p>
@@ -196,6 +300,8 @@
     <div class="txt" style="">Copyright © 2023 All Rights Reserved. <a style=""
         href="https://beian.miit.gov.cn/">粤ICP备19039027号-2</a></div>
   </div>
-  <script src="../../js/index.js"></script>
+
+  <script src="../js/index.js"></script>
 </body>
+
 </html>

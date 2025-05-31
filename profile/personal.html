@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Application</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+            margin-top: 14vh;
+        }
+
+        .resume-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .resume-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .resume-profile h3 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .resume-profile p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .resume-status {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .resume-status span {
+            color: #000;
+        }
+
+        .resume-buttons {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .resume-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .resume-btn.send {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .resume-btn.preview {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        .resume-resume-section {
+            margin: 20px 0;
+        }
+
+        .resume-resume-section h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .resume-resume-options {
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .resume-resume-options span {
+            margin-left: 5px;
+        }
+
+        .resume-add-resume {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .resume-timestamp {
+            text-align: right;
+            color: #666;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="max-header">
+            <div class="header-left">
+                <a href="../html/Home.html" title="CamboJob"><img
+                        src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
+                <div>
+                    <a class="ga" data-event="home_tab_home" href="../html/Home.html">Home</a>
+                    <a class="ga" data-event="home_tab_career_news" href="../school/index.html">Career Advice</a>
+                    <a href="../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
+                    <a href="../panha/cambo/index.html">Headhunting</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <span>English</span>
+                <div class="employers">
+                    <a data-url="#" class="ga" data-event="home_switch_company">Employers</a>
+                </div>
+                <div class="login-status" id="J_header">
+                    <div class="info">
+                        <a data-url="/chatapp/chatapp" data-event="chat_app_online" class="ga" target="_blank">
+                            <img src="https://www.cambojob.com/static/pc/7/dist/img/notice_icon%20@2x.png">
+                            <span style="display: none">0</span>
+                        </a>
+                    </div>
+                    <div class="user">
+                        <img src="https://qiniu.cambojob.com/cmb_1739038675.png" class="user-profile">
+                        <span></span>
+                        <div class="userTopCARDheader user-card2">
+                            <a href="personal.html" data-event="profile_view" class="curr ga">Personal center</a>
+                            <a href="jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
+                                management</a>
+                            <a href="account.html" class="ga" data-event="click_cv_account_management">Account
+                                management</a>
+                            <a href="../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="resume-container">
+        <div class="resume-profile">
+            <img src="../img/cmb_1739038675.png" alt="Profile Picture">
+            <h3>MeasMab</h3>
+            <p>Delivered: <span>0</span></p>
+            <p>Being viewed: <span>0</span></p>
+            <p>Interview: <span>0</span></p>
+        </div>
+        <div class="resume-status">
+            Your online resume has passed. Apply for Job Now!
+        </div>
+        <div class="resume-buttons">
+            <button class="resume-btn send">Send Resume</button>
+            <a class="resume-btn preview" href="preview.html">Preview</a>
+        </div>
+        <div class="resume-resume-section">
+            <h4>Online resume</h4>
+            <div class="resume-resume-options">
+                <span>Refresh</span>
+                <span>Preview</span>
+                <span>Edit</span>
+            </div>
+        </div>
+        <div class="resume-resume-section">
+            <h4>Attached Resume</h4>
+            <button class="resume-add-resume">Add attached resume</button>
+        </div>
+        <div class="resume-timestamp">2025/05/31 14:14</div>
+    </div>
+    
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

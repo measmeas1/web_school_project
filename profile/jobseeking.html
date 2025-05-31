@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/header.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .jobseek-profile-card {
+      max-width: 1368px;
+      width: 50%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      margin: 20px;
+      margin-top: 12vh;
+    }
+
+    .jobseek-profile-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+    .jobseek-profile-picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .jobseek-profile-info {
+      flex: 1;
+    }
+
+    .jobseek-profile-name {
+      font-family: "Battambang", system-ui;
+      font-weight: 700;
+      font-size: 18px;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .jobseek-profile-details {
+      display: flex;
+      gap: 15px;
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .jobseek-profile-details span {
+      display: flex;
+      align-items: center;
+    }
+
+    .jobseek-profile-details span::before {
+      content: "•";
+      margin-right: 5px;
+      color: #888;
+    }
+
+    .jobseek-profile-details span:first-child::before {
+      content: none;
+    }
+
+    .jobseek-profile-section {
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .jobseek-profile-section:last-child {
+      border-bottom: none;
+    }
+
+    .jobseek-section-title {
+      font-family: "Battambang", system-ui;
+      font-weight: 700;
+      font-size: 16px;
+      color: #1a1a1a;
+      margin: 0 0 10px;
+    }
+
+    .jobseek-section-content {
+      font-family: "Battambang", system-ui;
+      font-weight: 400;
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .jobseek-edit-icon {
+      width: 20px;
+      height: 20px;
+      background: url('https://via.placeholder.com/20?text=✎') no-repeat center;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .jobseek-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .jobseek-details-list {
+      padding-left: 20px;
+    }
+
+    .jobseek-details-list li {
+      color: #888;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .jobseek-details-list li::before {
+      margin-right: 5px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="max-header">
+      <div class="header-left">
+        <a href="../html/Home.html" title="CamboJob"><img
+            src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
+        <div>
+          <a class="ga" data-event="home_tab_home" href="../html/Home.html">Home</a>
+          <a class="ga" data-event="home_tab_career_news" href="../school/index.html">Career Advice</a>
+          <a href="../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
+          <a href="../panha/cambo/index.html">Headhunting</a>
+        </div>
+      </div>
+      <div class="header-right">
+        <span>English</span>
+        <div class="employers">
+          <a data-url="#" class="ga" data-event="home_switch_company">Employers</a>
+        </div>
+        <div class="login-status" id="J_header">
+          <div class="info">
+            <a data-url="/chatapp/chatapp" data-event="chat_app_online" class="ga" target="_blank">
+              <img src="https://www.cambojob.com/static/pc/7/dist/img/notice_icon%20@2x.png">
+              <span style="display: none">0</span>
+            </a>
+          </div>
+          <div class="user">
+            <img src="https://qiniu.cambojob.com/cmb_1739038675.png" class="user-profile">
+            <span></span>
+            <div class="userTopCARDheader user-card2">
+              <a href="personal.html" data-event="profile_view" class="curr ga">Personal center</a>
+              <a href="jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
+                management</a>
+              <a href="account.html" class="ga" data-event="click_cv_account_management">Account
+                management</a>
+              <a href="../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="jobseek-profile-card">
+    <div class="jobseek-profile-header">
+      <img src="../img/cmb_1739038675.png" alt="Profile Picture" class="jobseek-profile-picture">
+      <div class="jobseek-profile-info">
+        <h2 class="jobseek-profile-name">Meas Mab</h2>
+        <div class="jobseek-profile-details">
+          <span>អាយុ: 22</span>
+          <span>No | Bachelor</span>
+          <span>Cambodia</span>
+          <span>ទូរស័ព្ទ: +855 16998521</span>
+        </div>
+      </div>
+      <div class="jobseek-edit-icon"></div>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">គោលបំណងការងារ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <p class="jobseek-section-content">បំណងការងារ: Full-time</p>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">បទពិសោធន៍ការងារ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <p class="jobseek-section-content">ធ្វើការនៅក្រុមហ៊ុនអេបផល និង Facebook ១</p>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">ជំនាញផ្សេងៗ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <p class="jobseek-section-content">ជំនាញ កុំព្យូទ័រ, បច្ចេកវិទ្យា</p>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">គោលបំណងសង្ខេប</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <p class="jobseek-section-content">ខ្ញុំ មានបំណងចង់ធ្វើការលើផ្នែកបច្ចេកវិទ្យា និងការអភិវឌ្ឍន៍កម្មវិធី។</p>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">ការអប់រំ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <ul class="jobseek-details-list">
+        <li>2022 / 2 - 2026 / 9</li>
+        <li>Software Development</li>
+        <li>Norton University</li>
+        <li>Bachelor</li>
+      </ul>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">បទពិសោធន៍ការងារ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <p class="jobseek-section-content">ធ្វើការនៅក្រុមហ៊ុនអេបផល និង Facebook ជាការអនុវត្ត។</p>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">ជំនាញ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <ul class="jobseek-details-list">
+        <li>ការអភិវឌ្ឍន៍កម្មវិធី</li>
+        <li>ការគ្រប់គ្រងគម្រោង</li>
+        <li>ភាសាកុំព្យូទ័រ (Python, Java)</li>
+      </ul>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">វិញ្ញាបនបត្រ</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <ul class="jobseek-details-list">
+        <li>វិញ្ញាបនបត្រកុំព្យូទ័រ ពី Norton University (2024)</li>
+        <li>បញ្ជាក់ជំនាញអភិវឌ្ឍន៍កម្មវិធី (2023)</li>
+      </ul>
+    </div>
+
+    <div class="jobseek-profile-section">
+      <div class="jobseek-section-header">
+        <h3 class="jobseek-section-title">ភាសា</h3>
+        <div class="jobseek-edit-icon"></div>
+      </div>
+      <ul class="jobseek-details-list">
+        <li>ខ្មែរ - ភាសាកំណើត</li>
+        <li>អង់គ្លេស - ប្រសើរ</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

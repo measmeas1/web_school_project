@@ -193,6 +193,8 @@ label {
 }
 
 .login-btn {
+  text-decoration: none;
+  text-align: center;
   background: #30ba91;
   color: white;
   border: none;

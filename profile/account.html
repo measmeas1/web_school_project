@@ -1,30 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Listing</title>
-  <link rel="stylesheet" href="../css/description.css">
-  <link rel="stylesheet" href="../../../css/header.css">
-  <link rel="stylesheet" href="../../../css/footer.css">
+  <title>Security Settings</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    margin-top: 8vh;
+    margin-left: 10vh;
+  }
+
+  .account-container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .account-sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+  }
+
+  .account-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .account-sidebar li {
+    padding: 12px 10px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .account-sidebar li:hover,
+  .account-sidebar .account-active {
+    background-color: #e6f8f0;
+    color: #0fa779;
+    font-weight: bold;
+  }
+
+  .account-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f5f7fa;
+  }
+
+  .account-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .account-info-box {
+    background-color: #f0f4f8;
+    border: 1px solid #d9e2ec;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    color: #555;
+  }
+
+  .account-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .account-info-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .account-info-item label {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 6px;
+  }
+
+  .account-value {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .account-edit-icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  a {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #0fa779;
+    text-decoration: none;
+  }
+</style>
+
 <body>
   <header class="header">
     <div class="max-header">
       <div class="header-left">
-        <a href="../../Home.html" title="CamboJob">
-          <img src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
+        <a href="../html/Home.html" title="CamboJob"><img
+            src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
         <div>
-          <a class="ga" data-event="home_tab_home" href="../../Home.html">Home</a>
-          <a class="ga" data-event="home_tab_career_news" href="../../../school/index.html">Career Advice</a>
-          <a href="../../../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
-          <a href="../../../panha/cambo/index.html">Headhunting</a>
+          <a class="ga" data-event="home_tab_home" href="../html/Home.html">Home</a>
+          <a class="ga" data-event="home_tab_career_news" href="../school/index.html">Career Advice</a>
+          <a href="../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
+          <a href="../panha/cambo/index.html">Headhunting</a>
         </div>
       </div>
       <div class="header-right">
         <span>English</span>
         <div class="employers">
-          <a data-url="/index/company.htm" class="ga" data-event="home_switch_company">Employers</a>
+          <a data-url="#" class="ga" data-event="home_switch_company">Employers</a>
         </div>
         <div class="login-status" id="J_header">
           <div class="info">
@@ -37,70 +139,67 @@
             <img src="https://qiniu.cambojob.com/cmb_1739038675.png" class="user-profile">
             <span></span>
             <div class="userTopCARDheader user-card2">
-              <a href="../../../profile/personal.html" data-event="profile_view" class="curr ga">Personal center</a>
-              <a href="../../../profile/jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
+              <a href="personal.html" data-event="profile_view" class="curr ga">Personal center</a>
+              <a href="jobseeking.html" class="ga" data-event="job_application_management">Jobseeking
                 management</a>
-              <a href="../../../profile/account.html" class="ga" data-event="click_cv_account_management">Account
+              <a href="account.html" class="ga" data-event="click_cv_account_management">Account
                 management</a>
-              <a href="../../../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
+              <a href="../login_register/login.html" class="ga" data-event="User_Logout">Sign out</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="container">
-    <div class="left-section">
-      <h1>UXUI Designer</h1>
-      <span class="nego">$0.5K-1K/Month</span>
-      <div class="tags">
-        <span class="tag">Free food</span>
-        <span class="tag">Annual leaves</span>
-        <span class="tag">Year-end travel</span>
-      </div>
-      <div class="stats">
-        <div class="stat">👁 811</div>
-        <div class="stat">📅 2025/05/23</div>
-      </div>
-      <h2>Basic information</h2>
-      <ul class="info-list">
-        <li><strong>Job Type:</strong> Full-time</li>
-        <li><strong>Number of recruits:</strong> 2</li>
-        <li><strong>Work experience:</strong> 1-3 years</li>
-        <li><strong>Work location:</strong> Diamond Twin Tower Koh Pich, Sopheak Mongkol rd Phnom Penh</li>
-        <li><strong>Recruitment Department:</strong> No limit</li>
-        <li><strong>Education requirements:</strong> Bachelor</li>
-        <li><strong>Age requirements:</strong> 21-30 years old</li>
+  <div class="account-container">
+    <!-- Sidebar -->
+    <aside class="account-sidebar">
+      <ul>
+        <li class="account-active">Security</li>
       </ul>
-      <h2>Job description</h2>
-      <ul class="job-description">
-        <p>Responsibilities</p>
-        <li>Propose and design digital products.</li>
-        <li> Work with teams of project managers, developers and production specialists on multiple web projects.</li>
-        <p>Requirements</p>
-        <li>Bachelor degree in IT/Computer Science/Design or related fields.</li>
-        <li>Minimum 1 year experience with UX/UI design.</li>
-        <li>Experience in using Figma,Adobe Photoshop, Adobe illustrator.</li>
-        <li>Ability to solve problems creatively and effectively.</li>
-        <li>Experience working with design systems is an asset.</li>
-        <li>Knowledge of standards for web accessibility.</li>
-      </ul>
-    </div>
-    <div class="right-section">
-      <img src="https://qiniu.cambojob.com/2023-01-16-63c533d2da874.png" alt="Song Saa Private Island Logo" class="company-logo">
-      <div class="company-name">VTECH Software Development</div>
-      <div class="status">Currently offline</div>
-      <a href="#" class="button communicate-btn">Communicate now</a>
-      <a href="#" class="button apply-btn">Apply for this position</a>
-      <ul class="company-info">
-        <li><strong>Nature:</strong> Khmer-invested</li>
-        <li><strong>Industry:</strong> Internet/E-commerce/IT Services</li>
-        <li><strong>Scale:</strong> 20-99 People</li>
-        <li><strong>Area:</strong> Phnom Penh</li>
-      </ul>
-    </div>
-  </div>
+    </aside>
 
+    <!-- Main Content -->
+    <main class="account-content">
+      <h2>Security</h2>
+      <div class="account-info-box">
+        <p>🔒 Binding a mobile phone number can increase the timeliness and accuracy of job search feedback, thereby
+          improving your job search success rate.</p>
+      </div>
+
+      <div class="account-info-section">
+        <div class="account-info-item">
+          <label>Name</label>
+          <div class="account-value">
+            MeasMab
+            <span class="account-edit-icon">✏️</span>
+          </div>
+        </div>
+
+        <div class="account-info-item">
+          <label>Account</label>
+          <div class="account-value">j8521480825</div>
+        </div>
+
+        <div class="account-info-item">
+          <label>Password</label>
+          <div class="account-value">
+            Last Login Time: 2025-05-31 14:14:37
+            <a href="#">View Login Log</a>
+            <span class="account-edit-icon">✏️</span>
+          </div>
+        </div>
+
+        <div class="account-info-item">
+          <label>Phone number</label>
+          <div class="account-value">
+            16998521 (Login/change password after authentication)
+            <span class="account-edit-icon">✏️</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
   <div class="footer">
     <div class="footer-part1">
       <p>
@@ -172,6 +271,7 @@
         href="https://beian.miit.gov.cn/">粤ICP备19039027号-2</a></div>
   </div>
 
-  <script src="../../../js/index.js "></script>
+  <script src="../js/index.js"></script>
 </body>
+
 </html>
