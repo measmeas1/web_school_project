@@ -10,18 +10,18 @@ body {
   padding: 0;
 }
 
-.container {
+.career-container {
   display: flex;
   gap: 30px;
   padding: 40px;
   margin: 100px;
 }
 
-.content {
+.career-content {
   flex: 2;
 }
 
-.post {
+.career-post {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -32,31 +32,32 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   
 }
-.post .text{
+.career-post .career-text{
     font-family: "Battambang", system-ui;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
 }
 
-.post img {
+.career-post img {
   width: 250px;
   height: 130px;
   border-radius: 8px;
   object-fit: cover;
 }
 
-.post h2 {
+.career-post h2 {
   margin: 0;
   font-size: 20px;
+  color: #1a1a1a;
 }
 
-.post p {
+.career-post p {
   margin: 10px 0;
   color: #555;
 }
 
-.date {
+.career-date {
   font-size: 15px;
   color: #888;
 }
@@ -65,7 +66,7 @@ body {
 }
 
 
-.sidebar {
+.career-sidebar {
   flex: 1;
   background: #fff;
   padding: 20px;
@@ -88,12 +89,12 @@ body {
     font-style: normal;
 } */
 
-.search-wrapper {
+.career-search-wrapper {
   position: relative;
   width: 80%;
 }
 
-.search-wrapper i {
+.career-search-wrapper i {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -102,7 +103,7 @@ body {
   font-size: 16px;
 }
 
-.search-wrapper .search {
+.career-search-wrapper .career-search {
   width: 100%;
   padding: 10px 10px 10px 36px; /* left padding for icon */
   border-radius: 8px;
@@ -110,7 +111,7 @@ body {
 }
 
 
-.categories a {
+.career-categories a {
   display: block;
   margin: 10px 0;
   color: #1a1a1a;
@@ -121,30 +122,23 @@ body {
     font-weight: 500;
     font-style: normal;
 }
-.hot{
+.career-hot{
     padding-left: 20px;
     border-bottom: 1px solid #ddd;
 }
 
 
-.hot-news ul {
+.career-hot-news ul {
   list-style: none;
   padding: 0;
 }
 
-.hot-news li {
+.career-hot-news li {
   margin: 8px 0;
 }
 
-a{
-  text-decoration: none;
-}
 
-a h2{
-  color: #1a1a1a;
-}
-
-.hot-news a {
+.career-hot-news a {
     color: gray;
     text-decoration: none;
     font-size: 15px;
@@ -153,7 +147,7 @@ a h2{
     font-weight: 500;
     font-style: normal;
 }
-.inform{
+.career-inform{
     font-family: "Battambang", system-ui;
     font-weight: 500;
     font-style: normal;

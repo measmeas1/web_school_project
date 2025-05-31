@@ -10,18 +10,19 @@ body {
   padding: 0;
 }
 
-.container {
+.career-container {
   display: flex;
   gap: 30px;
   padding: 40px;
-  margin: 100px;
+  margin: 100px auto;
+  max-width: 1368px;
 }
 
-.content {
+.career-content {
   flex: 2;
 }
 
-.post {
+.career-post {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -30,16 +31,16 @@ body {
   margin-bottom: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  
-}
-.post .text{
-    font-family: "Battambang", system-ui;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 15px;
 }
 
-.post img {
+.career-post .career-text {
+  font-family: "Battambang", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.career-post img {
   width: 900px;
   height: 500px;
   border-radius: 8px;
@@ -47,42 +48,39 @@ body {
   padding-left: 10px;
 }
 
-.post h2 {
+.career-post h2 {
   margin: 0;
   font-size: 20px;
 }
 
-.post p {
+.career-post p {
   margin: 10px 0;
   color: #555;
 }
 
-.date {
+.career-date {
   font-size: 15px;
   color: #888;
 }
-.date i {
+
+.career-date i {
   margin-right: 6px;
 }
 
-
-.sidebar {
+.career-sidebar {
   flex: 1;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
-
 }
 
-
-
-.search-wrapper {
+.career-search-wrapper {
   position: relative;
   width: 80%;
 }
 
-.search-wrapper i {
+.career-search-wrapper i {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -91,15 +89,14 @@ body {
   font-size: 16px;
 }
 
-.search-wrapper .search {
+.career-search-wrapper .career-search {
   width: 100%;
-  padding: 10px 10px 10px 36px; /* left padding for icon */
+  padding: 10px 10px 10px 36px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
-
-.categories a {
+.career-categories a {
   display: block;
   margin: 10px 0;
   color: #1a1a1a;
@@ -107,41 +104,43 @@ body {
   font-weight: bold;
   padding-left: 20px;
   font-family: "Battambang", system-ui;
-    font-weight: 500;
-    font-style: normal;
-}
-.hot{
-    padding-left: 20px;
-    border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  font-style: normal;
 }
 
+.career-hot {
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+}
 
-.hot-news ul {
+.career-hot-news ul {
   list-style: none;
   padding: 0;
 }
 
-.hot-news li {
+.career-hot-news li {
   margin: 8px 0;
 }
 
-.hot-news a {
-    color: gray;
-    text-decoration: none;
-    font-size: 15px;
-    padding-left: 20px;
-    font-family: "Battambang", system-ui;
-    font-weight: 500;
-    font-style: normal;
+.career-hot-news a {
+  color: gray;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 20px;
+  font-family: "Battambang", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
-.inform{
-    font-family: "Battambang", system-ui;
-    font-weight: 500;
-    font-style: normal;
-    color: black;
-    padding-left: 20px;
+
+.career-inform {
+  font-family: "Battambang", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  padding-left: 20px;
 }
-a , h3{
+
+a, h3 {
   border: none;
   text-decoration: none;
   color: black;

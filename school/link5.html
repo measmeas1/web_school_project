@@ -6,14 +6,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="link1.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-    <div class="container">
-    <main class="content">
-      <article class="post">
-        <div class="text">
+  <header class="header">
+    <div class="max-header">
+      <div class="header-left">
+        <a href="../html/Home.html" title="CamboJob"><img
+            src="https://www.cambojob.com/static/pc/7/dist/img/logo@2x.png"></a>
+        <div>
+          <a class="ga" data-event="home_tab_home" href="../html/Home.html">Home</a>
+          <a class="ga" data-event="home_tab_career_news" href="../school/index.html">Career Advice</a>
+          <a href="../honglinj/index.html" data-event="home_tab_online_consultation" class=" ga">Job Fair</a>
+          <a href="../panha/cambo/index.html">Headhunting</a>
+        </div>
+      </div>
+      <div class="header-right">
+        <span>English</span>
+        <div class="employers">
+          <a data-url="#" class="ga" data-event="home_switch_company">Employers</a>
+        </div>
+        <div class="login-status" id="J_header">
+          <div class="info">
+            <a data-url="/chatapp/chatapp" data-event="chat_app_online" class="ga" target="_blank">
+              <img src="https://www.cambojob.com/static/pc/7/dist/img/notice_icon%20@2x.png">
+              <span style="display: none">0</span>
+            </a>
+          </div>
+          <div class="user">
+            <img src="https://qiniu.cambojob.com/cmb_1739038675.png" class="user-profile">
+            <span></span>
+            <div class="userTopCARDheader user-card2">
+              <a data-url="/personal/index/uid/513096.htm" data-event="profile_view" class="curr ga">Personal center</a>
+              <a data-url="/personal/resume_edit.htm" class="ga" data-event="job_application_management">Jobseeking
+                management</a>
+              <a data-url="/personal/jobs_interview.htm" class="ga" data-event="Click_JobManagement">Job management</a>
+              <a data-url="/personal/jobs_favorites.htm" class="ga" data-event="click_favorite_follow">Favorite &
+                Follow</a>
+              <a data-url="/personal/attention_jobs.htm" class="ga" data-event="view_browsing_history">Browsing
+                History</a>
+              <a data-url="/personal/user_safety.htm" class="ga" data-event="click_cv_account_management">Account
+                management</a>
+              <a data-url="/members/logout.htm" class="ga" data-event="User_Logout">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="career-container">
+    <main class="career-content">
+      <article class="career-post">
+        <div class="career-text">
             <h2>How To Get Your Very First Job</h2>
-            <span class="date"><i class="fa-solid fa-clock"></i>2022/09/28 23:00</span><br><br>
+            <span class="career-date"><i class="fa-solid fa-clock"></i>2022/09/28 23:00</span><br><br>
             <img src="https://www.cambojob.com//data/upload/images/22/10/01/6337c99147fc1.jpg" alt="Post thumbnail" />
 
             <h4>Build Trust Within Your Team</h4>
@@ -33,32 +80,32 @@
       <!-- Add more articles as needed -->
     </main>
 
-    <aside class="sidebar">
-        <div class="search-wrapper">
+    <aside class="career-sidebar">
+        <div class="career-search-wrapper">
             <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search keyword" class="search" />
+            <input type="text" placeholder="Search keyword" class="career-search" />
         </div>
-      <nav class="categories">
+      <nav class="career-categories">
         <a href="#">Workplace Focus</a>
         <a href="#">Resume making</a>
         <a href="#">Interview skills</a>
         <a href="#">Common problem</a>
         <a href="#">Hot news</a>
-        <div class="hot"></div>
+        <div class="career-hot"></div>
       </nav>
-      <div class="hot-news">
+      <div class="career-hot-news">
         <ul>
           <li><a href="#">- 4 Recommended First Jobs...</a></li>
           <li><a href="#">- 4 Ways to Achieve Work-...</a></li>
           <li><a href="#">- 3 Simple Ways to Keep...</a></li>
           <li><a href="#">- What Type Of People Should...</a></li>
           <li><a href="#">- How To Succeed In The New Job</a></li><br><br>
-          <li class="inform">Recommended information</li>
+          <li class="career-inform">Recommended information</li>
         </ul>
       </div>
-      <div class="hot"></div>
+      <div class="career-hot"></div>
 
-      <div class="hot-news">
+      <div class="career-hot-news">
         <ul>
           <li><a href="#">- 10 Things Smart Job Seekers Do</a></li>
           <li><a href="#">- របៀបរៀបចំខ្លួនទៅសម្ភាសន៍ឱ្យមានប្រសិន</a></li>
@@ -69,5 +116,76 @@
       </div>
     </aside>
   </div>
+  <div class="footer">
+    <div class="footer-part1">
+      <p>
+        <b>Follow us</b>
+        <span>Customer Service: +855-81697501</span>
+        <span>Working Hours: 08:30 - 18:00</span>
+        <span>5th Floor, C2 Lobby B, Olympia City, Makara District, Phnom Penh, Cambodia</span>
+      </p>
+      <p>
+        <b>Explore</b>
+        <a class="ga" data-event="bottom_job_search" style="cursor: pointer" data-url="/Jobs/jobs_list.htm">Job
+          search</a>
+        <a class="ga" data-event="bottom_job_profile" style="cursor: pointer" data-url="/Personal/user_avatar.htm">My
+          profile</a>
+        <a class="ga" data-event="bottom_job_career_info" style="cursor: pointer" data-url="/News/index.htm">Career
+          Advice</a>
+      </p>
+      <p>
+        <b>Company</b>
+        <a class="ga" data-event="company_about_cambojob" style="cursor: pointer" data-url="/Index/about.htm">About
+          Cambojob</a>
+        <a class="ga" data-event="company_contact_us" style="cursor: pointer" data-url="/Index/contract.htm">Contact
+          us</a>
+        <a class="ga" data-event="company_partnership" style="cursor: pointer;" data-url="/Index/partner.htm">Our
+          Partners</a>
+      </p>
+      <p>
+        <b>Employers</b>
+        <a class="ga" data-event="employer_register_free" style="cursor: pointer"
+          data-url="/Members/register.htm">Register for Free</a>
+        <a class="ga" data-event="employer_post_job" style="cursor: pointer" data-url="/Company/jobs_add.htm">Post a Job
+          Ad</a>
+        <a class="ga" data-event="employer_value_added_services" style="cursor: pointer"
+          data-url="/companyService/index.htm">Products &amp; Prices</a>
+      </p>
+      <p>
+        <b style="padding-bottom: 12px;">App Download</b>
+        <img style="with:110px; height:110px"
+          src="https://www.cambojob.com/static/pc/7/images/download/download-code.jpg">
+      </p>
+    </div>
+    <div class="footer-part2">
+      <div class="main-width">
+        <p><a href="index.html"><img src="https://www.cambojob.com/static/pc/7/dist/img/logo_grey@2x.png"></a>EASY TO
+          GET JOB</p>
+        <p>
+          <a class="ga" data-event="social_media_facebook" style="cursor: pointer"
+            data-url="https://www.facebook.com/cambojobkh"><img
+              src="https://www.cambojob.com/static/pc/7/dist/img/Facebook@2x.png"></a>
+          <a class="ga" data-event="social_media_telegram" style="cursor: pointer"
+            data-url="https://t.me/CBjobopportunity"><img
+              src="https://www.cambojob.com/static/pc/7/dist/img/telegram@2x.png"></a>
+          <a class="ga" data-event="social_media_tiktok" style="cursor: pointer"
+            data-url="https://www.tiktok.com/@cambojob?_t=8Xfa6J5OMOf"><img
+              src="https://www.cambojob.com/static/pc/7/dist/img/TikTok@2x.png"></a>
+          <a class="ga" data-event="social_media_instagram" style="cursor: pointer"
+            data-url="https://instagram.com/cambojobkh?igshid=YmMyMTA2M2Y="><img
+              src="https://www.cambojob.com/static/pc/7/dist/img/Instagram@2x.png"></a>
+          <!--<a href="javascript:;"><img src="https://www.cambojob.com/static/pc/7/dist/img/WeChat@2x.png"/></a>-->
+          <a class="ga" data-event="social_media_linkedin" style="cursor: pointer"
+            data-url="https://www.linkedin.com/company/cambojobkh/"><img
+              src="https://www.cambojob.com/static/pc/7/dist/img/LinkedIn@2x.png"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="foot" style="width: 100%;margin-top: 5px;height: 69px;text-align:center;margin: 10px 0 0 0;">
+    <div class="txt" style="">Copyright © 2023 All Rights Reserved. <a style=""
+        href="https://beian.miit.gov.cn/">粤ICP备19039027号-2</a></div>
+  </div>
+  <script src="../js/index.js"></script>
 </body>
 </html>

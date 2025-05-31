@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+
+.max-w-1368 {
+  max-width: 1368px;
+}
+
+.font-battambang {
+  font-family: "Battambang", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.service-step .icon {
+  width: 80px;
+  height: 80px;
+  background-image: url('https://www.cambojob.com/static/pc/7/dist/img/service-process@2x.jpg');
+  background-size: 400% 100%; /* Assuming the image has 4 equal parts horizontally */
+  background-repeat: no-repeat;
+}
+
+.step-1 .icon {
+  background-position: 0 0; /* First section */
+}
+
+.step-2 .icon {
+  background-position: -80px 0; /* Second section (adjust based on actual image width) */
+}
+
+.step-3 .icon {
+  background-position: -160px 0; /* Third section */
+}
+
+.step-4 .icon {
+  background-position: -240px 0; /* Fourth section */
+}
+
+@media (min-width: 1024px) {
+  .service-step .icon {
+    width: 100px;
+    height: 100px;
+  }
+  .step-2 .icon {
+    background-position: -100px 0;
+  }
+  .step-3 .icon {
+    background-position: -200px 0;
+  }
+  .step-4 .icon {
+    background-position: -300px 0;
+  }
+}
